@@ -1,0 +1,38 @@
+name: Deploy SSMLEditor Library Demo
+on:
+  push:
+    branches: [master]
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      # 2. 设置 Node.js 环境
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22' # 使用 Node.js 22.x 版本
+          registry-url: 'https://registry.npmjs.org/'
+          cache: 'npm' # 启用 npm 缓存以加速依赖安装
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 构建项目
+      - name: Build all packages
+        run: npm run build:all # 运行构建脚本，生成 dist 目录
+
+      # 5. 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: ./example/dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

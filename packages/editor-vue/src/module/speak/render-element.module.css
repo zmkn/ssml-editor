@@ -1,0 +1,17 @@
+@reference "tailwindcss";
+
+.seSpeakText {
+  [data-slate-node='text'] {
+    [data-slate-length='0'] {
+      &::after {
+        @apply content-[attr(data-text)] invisible;
+      }
+
+      br {
+        @apply hidden;
+      }
+    }
+
+    @apply relative;
+  }
+}

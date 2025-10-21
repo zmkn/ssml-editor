@@ -1,0 +1,12 @@
+node_modules/*
+docs/
+public/
+dist/
+*.html
+*.d.ts
+.eslintrc.js
+.prettierrc.json
+tsconfig.json
+package.json
+package-lock.json
+postcss.config.js

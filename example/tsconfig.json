@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/*.d.ts",
+    "postcss.config.ts",
+    "tailwind.config.ts",
+    "vite.config.ts",
+    "vite.config.dev.ts",
+    "vite.config.prod.ts"
+  ]
+}

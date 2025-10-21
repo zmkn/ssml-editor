@@ -1,0 +1,15 @@
+:host,
+:root {
+  --default-font-family:
+    'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB',
+    ui-sans-serif, system-ui, sans-serif, '\5B8B\4F53', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --editor-text-area-padding-left: 1rem;
+  --editor-text-area-padding-right: 1rem;
+  --editor-text-area-padding-top: 1rem;
+  --editor-text-area-padding-bottom: 2.5rem;
+
+  --editor-text-area-box-shadow: 0 0 6px 0
+    var(--tw-shadow-color, rgb(0, 0, 0, 0.1));
+}

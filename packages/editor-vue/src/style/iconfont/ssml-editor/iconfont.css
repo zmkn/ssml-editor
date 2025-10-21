@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "iconfont-ssml-editor"; /* Project id 4958838 */
+  src: url('iconfont.eot?t=1760325684312'); /* IE9 */
+  src: url('iconfont.eot?t=1760325684312#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('iconfont.woff2?t=1760325684312') format('woff2'),
+       url('iconfont.woff?t=1760325684312') format('woff'),
+       url('iconfont.ttf?t=1760325684312') format('truetype'),
+       url('iconfont.svg?t=1760325684312#iconfont-ssml-editor') format('svg');
+}
+
+.iconfont-ssml-editor {
+  font-family: "iconfont-ssml-editor" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ssml-editor-quanping:before {
+  content: "\e634";
+}
+
+.icon-ssml-editor-chexiao:before {
+  content: "\e607";
+}
+
+.icon-ssml-editor-chongzuo:before {
+  content: "\e606";
+}
+
+.icon-ssml-editor-shengyin:before {
+  content: "\e6fc";
+}
+
+.icon-ssml-editor-dancidufa:before {
+  content: "\e6da";
+}
+
+.icon-ssml-editor-speaker:before {
+  content: "\e6d8";
+}
+
+.icon-ssml-editor-zuixiaohua:before {
+  content: "\e656";
+}
+
+.icon-ssml-editor-delete:before {
+  content: "\e61a";
+}
+
+.icon-ssml-editor-close:before {
+  content: "\e6ac";
+}
+
+.icon-ssml-editor-close-fill:before {
+  content: "\e864";
+}
+
+.icon-ssml-editor-pause:before {
+  content: "\e60e";
+}
+
+.icon-ssml-editor-play:before {
+  content: "\e600";
+}
+
+.icon-ssml-editor-minganci:before {
+  content: "\e805";
+}
+
+.icon-ssml-editor-lianxu:before {
+  content: "\e61e";
+}
+
+.icon-ssml-editor-yinbiao:before {
+  content: "\e60b";
+}
+
+.icon-ssml-editor-tingdun-fill:before {
+  content: "\ebe9";
+}
+
+.icon-ssml-editor-code:before {
+  content: "\e615";
+}
+
+.icon-ssml-editor-fuzhi:before {
+  content: "\e61b";
+}
+
+.icon-ssml-editor-daochu:before {
+  content: "\e612";
+}
+
+.icon-ssml-editor-baocun:before {
+  content: "\e67c";
+}
+
+.icon-ssml-editor-bgm:before {
+  content: "\e639";
+}
+
+.icon-ssml-editor-yinxiao:before {
+  content: "\e646";
+}
+
+.icon-ssml-editor-charujingyin:before {
+  content: "\ebe5";
+}
+
+.icon-ssml-editor-tingdun:before {
+  content: "\ebe6";
+}
+
+.icon-ssml-editor-zhuanhuan:before {
+  content: "\e73d";
+}
+
+.icon-ssml-editor-duoren:before {
+  content: "\e62a";
+}
+
+.icon-ssml-editor-biansu:before {
+  content: "\e7e3";
+}
+
+.icon-ssml-editor-bieming:before {
+  content: "\e69d";
+}
+
+.icon-ssml-editor-shuzidufa:before {
+  content: "\ebe1";
+}
+
+.icon-ssml-editor-zhongyin:before {
+  content: "\ebe0";
+}
+
+.icon-ssml-editor-duoyinzi:before {
+  content: "\e8bb";
+}
+
+.icon-ssml-editor-zanting:before {
+  content: "\e651";
+}
+
+.icon-ssml-editor-bofang:before {
+  content: "\e621";
+}
+
