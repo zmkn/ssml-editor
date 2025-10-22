@@ -12,6 +12,7 @@ node_modules
 .DS_Store
 dist
 dist-ssr
+build
 coverage
 *.local
 
@@ -24,3 +25,7 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Generated files
+.docusaurus
+.cache-loader
