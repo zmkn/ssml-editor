@@ -1,6 +1,6 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type { Config } from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -12,15 +12,14 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   favicon: 'img/favicon.svg',
-  tagline: '基于 Vue3 的 SSML 编辑器组件',
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  projectName: 'docusaurus', // Usually your repo name.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'ssml-editor', // Usually your repo name.
+  organizationName: 'ssml-editor', // Usually your GitHub org/user name.
 
   onBrokenLinks: 'throw',
 
@@ -30,10 +29,19 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh-Hans'],
+    path: 'i18n',
     localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en',
+        translate: false,
+      },
       'zh-Hans': {
+        label: '简体中文',
+        direction: 'ltr',
         htmlLang: 'zh-CN',
-        direction: 'rtl',
+        translate: true,
       },
     },
   },
@@ -48,21 +56,6 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -70,8 +63,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -89,13 +81,12 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
         {
           type: 'localeDropdown',
           position: 'right',
         },
         {
-          href: 'https://github.com/zmkn/ssml-editor',
+          href: 'https://github.com/ssml-editor/ssml-editor',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -115,37 +106,16 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/ssml-editor/ssml-editor',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SSML Editor Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

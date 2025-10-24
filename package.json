@@ -20,6 +20,7 @@
     "start": "npm run start:website",
     "dev": "npm run dev --workspace=@ssml-editor/example",
     "start:website": "npm start --workspace=@ssml-editor/website",
+    "start:website:cn": "npm start:cn --workspace=@ssml-editor/website",
     "build:all": "run-s build:base build:utils build:modules build:core build:vue build:editor-vue build:example",
     "build:vue": "npm run build --workspace=@ssml-editor/vue",
     "build:core": "npm run build --workspace=@ssml-editor/core",

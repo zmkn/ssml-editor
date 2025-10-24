@@ -3,16 +3,16 @@
     "message": "SSML Editor",
     "description": "The title in the navbar"
   },
-  "item.label.Tutorial": {
-    "message": "指南",
-    "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "博客",
-    "description": "Navbar item with label Blog"
-  },
   "logo.alt": {
     "message": "SSML Editor",
     "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
   }
 }

@@ -1,55 +1,92 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import Heading from '@theme/Heading';
+import clsx from 'clsx';
+import type { ReactNode } from 'react';
 import styles from './styles.module.css';
 
 type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  title: ReactNode;
   description: ReactNode;
+  Svg?: React.ComponentType<React.ComponentProps<'svg'>>;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: (
+      <Translate
+        id="homepage.feature.easy-to-use.title"
+        description="Homepage feature item with title easy to use"
+      >
+        Easy to use
+      </Translate>
+    ),
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <Translate
+        id="homepage.feature.easy-to-use.description"
+        description="Homepage feature item with description easy to use"
+      >
+        Provide rich and flexible configuration options along with comprehensive
+        and easy-to-understand documentation tutorials, helping beginners
+        quickly get started and achieve efficient integration and usage.
+      </Translate>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: (
+      <Translate
+        id="homepage.feature.power.title"
+        description="Homepage feature item with title power"
+      >
+        Powered by Vue3
+      </Translate>
+    ),
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <Translate
+        id="homepage.feature.power.description"
+        description="Homepage feature item with description power"
+      >
+        Developed based on Vue3, it extends the Slate Vue3 components to create
+        a convenient, user-friendly, and highly customizable SSML editor
+        component, balancing development efficiency and user experience.
+      </Translate>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: (
+      <Translate
+        id="homepage.feature.easy-to-extend.title"
+        description="Homepage feature item with title easy to extend"
+      >
+        Easy to extend
+      </Translate>
+    ),
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <Translate
+        id="homepage.feature.easy-to-extend.description"
+        description="Homepage feature item with description easy to extend"
+      >
+        Provide developers with comprehensive extensibility: configurable menus,
+        modules and plugins, standardized and serialization interfaces, making
+        development more streamlined and liberated.
+      </Translate>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, description, Svg }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+      {Svg ? (
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+      ) : (
+        ''
+      )}
+      <div className="padding-horiz--md">
+        <Heading as="h3" className="text--center">
+          {title}
+        </Heading>
         <p>{description}</p>
       </div>
     </div>
