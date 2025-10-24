@@ -16,7 +16,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/ssml-editor/ssml-editor"
   },
   "copyright": {
-    "message": "Copyright © 2025 SSML Editor Project, Inc. Built with Docusaurus.",
+    "message": "版权所有 © 2025 SSML Editor Project, Inc。此网站使用 Docusaurus 构建。",
     "description": "The footer copyright"
   }
 }
